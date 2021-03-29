@@ -34,4 +34,8 @@ class MovieViewModel {
     func cellForRowAt(indexPath: IndexPath) -> Movie {
         return popularMovies[indexPath.row]
     }
+    
+    func didSelectRowAt(indexPath: IndexPath) -> Movie{
+        return popularMovies[indexPath.row]
+    }
 }

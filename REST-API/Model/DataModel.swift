@@ -15,7 +15,6 @@ struct MoviesData: Decodable {
     }
 }
 
-
 struct Movie: Decodable{
     let title: String?
     let year: String?
