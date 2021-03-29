@@ -24,7 +24,7 @@ class MovieTableViewCell: UITableViewCell {
     }
         
     
-    //Update the UI Views
+    //Update the UI Views...
     private func updateUI(title: String?, releaseDate: String?, rating: Double?,
                           overview: String?, poster: String?){
         self.movieTitle.text = title

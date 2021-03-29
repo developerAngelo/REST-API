@@ -20,7 +20,6 @@ class MoviesViewController: UIViewController {
     
     func loadPopularMoviesData(){
         viewModel.fetchPopularMoviesData { [weak self] in
-            self?.tableView.rowHeight = 148
             self?.tableView.dataSource = self
             self?.tableView.delegate = self
             self?.tableView.reloadData()
@@ -52,6 +51,10 @@ extension MoviesViewController: UITableViewDataSource, UITableViewDelegate{
             self.navigationController?.pushViewController(moviesContent, animated: true)
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 148
     }
     
 }
